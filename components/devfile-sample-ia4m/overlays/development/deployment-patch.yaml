@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ia4m
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0029-tenant/tkrw-pr712-0075-0029-app/devfile-sample-ia4m@sha256:07c2bdbe305dc6d4e122fdb28cf2bd1ffc177ea22c4373dc0eb94d4d91e0ad83
+        name: my-nodejs
+        resources: {}
+status: {}
